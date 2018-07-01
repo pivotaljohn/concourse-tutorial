@@ -3,15 +3,12 @@ platform: linux
 
 image_resource:
   type: docker-image
-  source: {repository: ubuntu}
+  source: { repository: ubuntu }
 
 inputs:
 - name: pipeline-src
-
-outputs:
 - name: apple-cart
 
 run:
-  path: pipeline-src/play/pick_apples.sh
+  path: pipeline-src/play/sort_apples.sh
   args: [apple-cart]
-
